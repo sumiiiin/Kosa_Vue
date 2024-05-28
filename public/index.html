@@ -2,16 +2,21 @@
 <html lang="">
   <head>
     <meta charset="utf-8">
+    <!-- IE8 이상 브라우저는 호환성 보기 기능이 있어서 어떤 렌더링 엔진을 사용할 것인지 사용자가 선택할 수 있다. -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <!-- base url은 root를 뜻 함 -->
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
   <body>
+    <!-- 브라우저가 자바스크립트를 지원하지 않을 경우 나오는 문구 -->
     <noscript>
       <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
-    <div id="app"></div>
+    <div id="app">
+      <!-- 여기에 App.vue 컴포넌트의 내용이 들어감 -->
+    </div>
     <!-- built files will be auto injected -->
   </body>
 </html>
