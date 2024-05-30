@@ -30,7 +30,8 @@ let modalDialogA = null;
 let modalDialogB = null;
 let modalDialogC = null;
 
-// 컴포넌트가 생성되고, Dom에 부착될 때 자동으로 실행되는 콜백
+// 컴포넌트가 생성되고, Dom에 부착될 때 자동으로 실행되는 콜백(자동으로 실행한다.)
+// script setup은 마운트 되기 전에 실행이 되기 때문에 마운트를 하고 실행해야 하면 onMounted함수를 사용햐야 한다.
 onMounted(() => {
     modalDialogA = new Modal(document.querySelector("#dialogA"));
     modalDialogB = new Modal(document.querySelector("#dialogB"));
