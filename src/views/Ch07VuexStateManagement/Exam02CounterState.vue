@@ -36,7 +36,7 @@ function changeByMutation(){
     store.commit("counter/setCount", 1)
 }
 
-function changeByAction(){
+function changeByAction(){ 
     store.dispatch("counter/addAction", 1)
 }
 

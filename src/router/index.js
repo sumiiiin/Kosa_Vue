@@ -6,6 +6,7 @@ import Ch04EventHandlingWatch from '@/router/Ch04EventHandlingWatch';
 import Ch05DataDelivery from "./Ch05DataDelivery";
 import Ch06LifecycleHook from "./Ch06LifecycleHook"
 import Ch07VuexStateManagement from "./Ch07VuexStateManagement"
+import Ch08RestAPI from "./Ch08RestAPI"
 
 const routes = [
   {
@@ -18,7 +19,8 @@ const routes = [
   ...Ch04EventHandlingWatch, // 배열의 항목을 넣겠다.
   ...Ch05DataDelivery,
   ...Ch06LifecycleHook,
-  ...Ch07VuexStateManagement
+  ...Ch07VuexStateManagement,
+  ...Ch08RestAPI
 ]
 // 구조분해하여 다른 라우터 파일 추가
 
