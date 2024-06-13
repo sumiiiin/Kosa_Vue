@@ -25,7 +25,7 @@ const router = useRouter();
 function goUrl(kind) {
     router.push("/Ch02ComponentRouting/" + kind) // 비동기 방식인데
     .then(() => { // 이렇게 하면 동기로 사용 할 수 있다.
-        console.log("이동 완료");
+        console.log("이동 완료"); // 동기로 실행 할 실행 문
     });
     
 }

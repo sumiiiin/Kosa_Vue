@@ -297,7 +297,24 @@
                                     Exam01Promise: Promise 비동기
                         </RouterLink>
                     </li>
-                    
+                    <li class="nav-item">
+                        <RouterLink to="/Ch08RestAPI/Exam02Join" 
+                                    class="nav-link">
+                            Exam02Join: 회원 가입
+                        </RouterLink>
+                    </li>
+                    <li class="nav-item">
+                        <RouterLink to="/Ch08RestAPI/Exam03Login" 
+                                    class="nav-link">
+                            Exam03Login: 회원 로그인
+                        </RouterLink>
+                    </li>
+                    <li class="nav-item">
+                        <RouterLink to="/Ch08RestAPI/Exam04Board/BoardList" 
+                                    class="nav-link">
+                            Exam04Board/BoardList: 게시판
+                        </RouterLink>
+                    </li>
                 </ul>
             </div>
             </div>
