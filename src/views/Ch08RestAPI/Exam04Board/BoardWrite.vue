@@ -58,6 +58,7 @@ async function handleSubmit() {
     formData.append("btitle",board.value.btitle);
     formData.append("bcontent",board.value.bcontent);
     const elBattach = battach.value;
+    console.log("");
 
     // 파일 파트 넣기
     if(elBattach.files.length != 0){

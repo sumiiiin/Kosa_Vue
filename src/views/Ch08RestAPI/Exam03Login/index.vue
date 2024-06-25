@@ -3,7 +3,8 @@
         <div class="card-header">Exam03Login</div>
         <div class="card-body">
             <!-- 전역상태를 이용하여 요청헤더에 userId가 없으면 dom에 추가하여 보이기-->
-            <div v-if="$store.state.userId === ''"><form @submit.prevent="handleLogin">
+            <div v-if="$store.state.userId === ''">
+                <form @submit.prevent="handleLogin">
                 <!-- @submit.prevent 바로 서버로 데이터가 들어가는 것을 막음 (ajax로 통신해야 하기 때문?) -->
                 <!-- 유효성 검사 후에 수동으로 서버와 통신하는 코드를 함수에 작성해야 함 -->
                 <div class="input-group mb-2">

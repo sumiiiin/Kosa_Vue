@@ -28,9 +28,9 @@
                 <div class="input-group mb-2">
                     <span class="input-group-text">국가</span>
                     <select class="form-control" v-model="product.madein">
-                        <option value="한국">한국</option>
-                        <option value="미국">미국</option>
-                        <option value="독일">독일</option>
+                        <option value="Ko">한국</option>
+                        <option value="Am">미국</option>
+                        <option value="Je">독일</option>
                     </select>
                 </div>
                 <div class="input-group mb-2">
@@ -109,7 +109,7 @@ let product = ref({
     company: "지오다노",
     price: 20000,
     info: "통풍이 잘되어 시원해요",
-    madein: "미국", // option중에 하나를 작성해야 한다.
+    madein: "Am", // option중에 하나를 작성해야 한다.
     colors: ["black", "yellow"], // 배열은 항목의 value값으로 설정하고
     sale1: true, // 값이 하나라면 Boolean으로 설정
     sale2: "yes", // true false 이외의 다른 값을 사용하고 싶으면 true-value..등을 이용한다.
