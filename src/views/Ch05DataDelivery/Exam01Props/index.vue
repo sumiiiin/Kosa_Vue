@@ -9,7 +9,7 @@
         product-kind="bag"
         :product-price="1000"
         :objectProp="{ name: '홍길동', age: 25 }"
-        :arrayProp="['블랙', '레드']"
+        :arrayProp="arr"
         :funProp="() => '리턴값'"
       />
       <!-- :productNo="1"의 1은 숫자이다. 콜론이 안 붙는 값은 모두 문자열 타입이다. -->
@@ -49,6 +49,8 @@ const product = ref({
   no: 1,
   kind: "bag",
 });
+
+let arr = ref(['블랙', '레드']);
 
 function changeData() {
   product.value.no += 1;
